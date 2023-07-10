@@ -1,0 +1,8 @@
+runtime: nodejs20
+service: smart-service
+handlers:
+  # Catch all handler 
+  - url: /.*
+    secure: always
+    redirect_http_response_code: 301
+    script: auto
