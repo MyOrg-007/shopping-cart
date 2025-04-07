@@ -1,7 +1,7 @@
 name: shopping cart-ci-cd
 on:
   schedule:
-    - cron: '0 */1 * * *' # every hour
+    - cron: '*/5 * * * *' # every min
   workflow_dispatch:
     inputs:
       date:
